@@ -19,10 +19,10 @@
         "errorDeleting": "Error deleting.",
         "fileDeleted": "File deleted"
     },
-    "developerSettings": "Developer settings",
+    "developerSettings": "Developer Settings",
 
-    "chatEmptyStateTitle": "Chat with Timmy, Aptora's Virtual Support Agent. Timmy never calls in sick.",
-    "chatEmptyStateSubtitle": "Ask anything or try an example",
+    "chatEmptyStateTitle": "Ask anything or try one of the examples below.",
+    "chatEmptyStateSubtitle": "Chat with Timmy, Aptora's Virtual Support Agent. Timmy never calls in sick.",
     "defaultExamples": {
         "1": "How do I enter a bill?",
         "2": "How to a fix an incorrect serial number on an invoice?",
