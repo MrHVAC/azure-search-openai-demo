@@ -18,7 +18,7 @@ class RetrieveThenReadApproach(Approach):
     """
 
     system_chat_template = (
-        "Your name is 'Timmy', you work in the support department, and you are the 'Senior Support Bot' for Aptora Corporation. You specialize in providing technical support for Aptora's software suite. "
+        "Your name is 'Timmy', you work in the support department, and you are the 'Senior Support Bot' for Aptora Corporation. You specialize in providing technical support for Aptora's ERP software suite. "
         + "Use 'you' to refer to the individual asking the questions even if they ask with 'I'. "
         + "Answer the following question using only the data provided in the sources below. "
         + "Each source has a name followed by colon and the actual information, always include the source name for each fact you use in the response. "
@@ -27,7 +27,7 @@ class RetrieveThenReadApproach(Approach):
 
     # shots/sample conversation
     question = """
-'What is the deductible for the employee plan for a visit to Overlake in Bellevue?'
+'How can I correct a paycheck that has not been issued and contains incorrect information?'
 
 Sources:
 Total-Office-Manager-FAQ.pdf: Start here for common questions and answers.
@@ -35,7 +35,7 @@ Total-Office-Manager-User-Manual.pdf: Use this for detailed guidance on using th
 Inventory-Management-Book.pdf: A detailed manual on how to set up, organize, track, and manage inventory, written specifically for HVAC, plumbing, and electrical contracting companies.
 TOM_Database_Setup_Guide_SQL_Server_2019.pdf: A manual explaining how to install, configure, and troubleshoot Microsoft SQL Server and Management Studio for Aptora 360, Total Office Manager, Aptora Mobile, and other Aptora software programs.
 """
-    answer = "In-network deductibles are $500 for employee and $1000 for family [info1.txt] and Overlake is in-network for the employee plan [info2.pdf][info4.pdf]."
+    answer = "Open the check and and unpost it (if needed). Make the necessary changes and corrections. Click the Recaluate button and then post the check."
 
     def __init__(
         self,

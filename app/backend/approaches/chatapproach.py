@@ -10,18 +10,18 @@ from approaches.approach import Approach
 
 class ChatApproach(Approach, ABC):
     query_prompt_few_shots: list[ChatCompletionMessageParam] = [
-        {"role": "user", "content": "How did crypto do last year?"},
-        {"role": "assistant", "content": "Summarize Cryptocurrency Market Dynamics from last year"},
-        {"role": "user", "content": "What are my health plans?"},
-        {"role": "assistant", "content": "Show available health plans"},
+        {"role": "user", "content": "How can I add an item to a bill?"},
+        {"role": "assistant", "content": "Show me how to enter an adjusting journal entry"},
+        {"role": "user", "content": "Can the software track assets and assets?"},
+        {"role": "assistant", "content": "How do we begin tracking inventory"},
     ]
     NO_RESPONSE = "0"
 
     follow_up_questions_prompt_content = """Generate 3 very brief follow-up questions that the user would likely ask next.
     Enclose the follow-up questions in double angle brackets. Example:
-    <<Are there exclusions for prescriptions?>>
-    <<Which pharmacies can be ordered from?>>
-    <<What is the limit for over-the-counter medication?>>
+    <<How can I delete a bill?>>
+    <<Where is the list of adjusting journal entries?>>
+    <<How do adjusting journal entries affect the accounting?>>
     Do no repeat questions that have already been asked.
     Make sure the last question ends with ">>".
     """
